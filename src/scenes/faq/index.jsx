@@ -14,6 +14,7 @@ const FAQ = () => {
       <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
 
       <Accordion defaultExpanded>
+        
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
             An Important Question
@@ -31,7 +32,7 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-           Another Important Question
+            Another Important Question
           </Typography>
         </AccordionSummary>
         <AccordionDetails>

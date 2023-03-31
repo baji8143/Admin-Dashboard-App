@@ -15,9 +15,37 @@ import Bar from "./scenes/bar";
 import Pie from "./scenes/pie";
 import Line from "./scenes/line";
 import Geography from "./scenes/geography";
+// import {useState} from "react"
 
 const App = () => {
   const [theme, colorMode] = useMode();
+  // const [faq,setFaq] = useState([
+  //   {
+  //     title:" An Important Question",
+  //     content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  //     explicabo iste praesentium, ut eligendi quae veniam perferendis
+  //     culpa nisi aperiam.`
+  //   },
+  //   {
+  //     title:"Another Important Question",
+  //     content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  //     explicabo iste praesentium, ut eligendi quae veniam perferendis
+  //     culpa nisi aperiam.`
+  //   },
+  //   {
+  //     title:"  Your Favorite Question",
+  //     content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  //     explicabo iste praesentium, ut eligendi quae veniam perferendis
+  //     culpa nisi aperiam.`
+  //   },
+  //   {
+  //     title:" Some Random Question",
+  //     content:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+  //     explicabo iste praesentium, ut eligendi quae veniam perferendis
+  //     culpa nisi aperiam.`
+  //   },
+
+  // ])
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
@@ -39,6 +67,7 @@ const App = () => {
               <Route path="/line" element={<Line />} />
               <Route path="/geography" element={<Geography />} />
             </Routes>
+
           </main>
         </div>
       </ThemeProvider>

@@ -39,24 +39,24 @@ const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
   return (
-    <Box
-      sx={{
-        "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
-        },
-        "& .pro-sidebar-wrapper": {
-          backgroundColor: "transparent !important",
-        },
-        "& .pro-sidebar-item": {
-          padding: "5px 35px 5px 20px !important",
-        },
-        "& .pro-sidebar-hover": {
-          color: "#868dfb !important",
-        },
-        "& .pro-menu-item.active": {
-          color: "#6870fa !important",
-        },
-      }}
+    <Box 
+    sx={{
+      "& .pro-sidebar-inner": {
+        background: `${colors.primary[400]} !important`,
+      },
+      "& .pro-sidebar-wrapper": {
+        backgroundColor: "transparent !important",
+      },
+      "& .pro-sidebar-item": {
+        padding: "5px 35px 5px 20px !important",
+      },
+      "& .pro-sidebar-hover": {
+        color: "#868dfb !important",
+      },
+      "& .pro-menu-item.active": {
+        color: "#6870fa !important",
+      },
+    }}
     >
       
       <ProSidebar collapsed={isCollapsed}>
@@ -104,7 +104,7 @@ const Sidebar = () => {
                   variant="h2"
                   color={colors.grey[100]}
                   fontWeight="bold"
-                  sx={{ m: "10px 0 0 0" }}
+                  sx={{ m: "5px 0 0 0" }}
                 >
                   Ed Roh
                 </Typography>
